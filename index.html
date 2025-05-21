@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -104,10 +104,10 @@
 </head>
 <body>
 
-<!-- 🎶 Background Music -->
-<audio autoplay loop>
+ <!-- 🎶 Background Music -->
+<audio id="bgMusic" loop>
   <source src="bensound-romantic.mp3" type="audio/mpeg">
-  <!-- 💡 Replace this link with your own MP3 file if needed -->
+  Your browser does not support the audio element.
 </audio>
 
 
@@ -119,30 +119,49 @@
 </div>
 
 <!-- 🎈 Birthday Wish Page -->
+ <!-- 🎈 Birthday Wish Page -->
 <div id="wishPage">
-  <h1>Happy 24th Birthday Mage Sosa Mala  🎉</h1>
-  <p>To the most beautiful soul 🌸<br>
-    You are a blessing in this world, and in my heart 💖<br>
-    I hope this day brings a big smile to your face just like you always bring to mine.
-    This website is more than just a surprise… it’s a piece of my heart, wrapped in every word, every color, 
-    every moment I created here all for you. You may not fully realize it, but the day you came into this world, 
-    someone incredibly special arrived someone whose laugh can melt hearts, whose smile could light galaxies, 
-    and whose kindness has unknowingly changed lives… especially mine. I built this just to see you smile because 
-    your happiness means more to me than anything. If you ever wonder if you’ve made a difference in someone’s life,
-     let this be your answer: you’ve completely changed mine. And if after seeing this, you feel like you’ve won something 
-     in life  just know, the real winner here… is me, for simply having you in my world. 💫💗
+  <h1>Happy 24th Birthday Mage Sosa Mala 🎉</h1>
 
+  <div style="max-height: 60vh; overflow-y: auto; padding: 10px; text-align: justify;">
+    <p>
+      You are a blessing in this world, and in my heart 💖<br>
+      I hope this day brings a big smile to your face just like you always bring to mine.
+      This website is more than just a surprise… it’s a piece of my heart, wrapped in every word, every color, 
+      every moment I created here all for you. You may not fully realize it, but the day you came into this world, 
+      someone incredibly special arrived someone whose laugh can melt hearts, whose smile could light galaxies, 
+      and whose kindness has unknowingly changed lives… especially mine. I built this just to see you smile because 
+      your happiness means more to me than anything. If you ever wonder if you’ve made a difference in someone’s life,
+      let this be your answer: you’ve completely changed mine. And if after seeing this, you feel like you’ve won something 
+      in life just know, the real winner here… is me, for simply having you in my world. 💫💗 <br><br>
 
-  </p>
-  <h2 style="font-family: 'Pacifico', cursive; color: hotpink;">Hey Beautiful 🌷</h2>
+      මේක මන් ඔයා වෙනුවෙන්ම කරපු ආදරණීය දෙයක් 🥰<br>
+      ඔයාව මුණගැහුනු පලවෙනි දවසෙ ඉදන් මන් සතුටින් ඉන්න හේතුව ඔයයි ...❤ ඉතිං ,<br><br>
+      <center>
+      අයිතිය ප්‍රේමය කරගත් මිනිසුන්ද...<br>
+      ප්‍රේමය අයිති කරගත් මිනිසුන්ද..<br>
+      ප්‍රේමයට පමණක් අයිතිය කියන මිනිසුන්ද..<br>
+      ප්‍රේමයක් නැතුවම අයිතිය කියන මිනිසුන්ද අතර...<br>
+      <strong>මම නුඹට....<br>
+      අයිතියක් නැතුවම ප්‍රේම කරමි....🥹💖🍃</strong><br><br>
+      ඉතිං මන් හරි ආදරෙයි ....🌹💖
+      </center>
+    </p>
+  </div>
+
+  <h2 style="font-family: 'Pacifico', cursive; color: hotpink; margin-top: 30px;">Hey Beautiful 🌷</h2>
   <div class="heart">❤️</div>
 </div>
 
+
 <!-- 🎈 Flower Petal and Balloon Animations -->
-<script>
+ <script>
   function startSurprise() {
     document.getElementById("startPage").style.display = "none";
     document.getElementById("wishPage").style.display = "flex";
+
+    // 🎵 Start music after user interaction
+    document.getElementById("bgMusic").play();
   }
 
   const emojis = ['🎈', '🌸', '🌷', '🎉', '💐'];
